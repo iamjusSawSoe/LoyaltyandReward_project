@@ -1,0 +1,21 @@
+.error-modal {
+  .modal-popup__box {
+    padding-top: 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .btn-bar {
+    margin-top: 25px;
+  }
+}
+
+.modal-popup {
+  .error-img {
+    width: 190px;
+    height: 160px;
+    position: absolute;
+    top: -34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

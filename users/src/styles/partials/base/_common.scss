@@ -1,0 +1,124 @@
+h1 {
+  color: red;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+.centered {
+  @include flexbox(center, center);
+}
+
+// for form inputs and media queries for its
+.form-box {
+  @include flexdirection(column, 25px, 0);
+  padding: 18px 10px;
+  background-color: var(--tertiary-color);
+  font-family: "Segoe UI";
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+// page background
+.outer {
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.inner {
+  background: radial-gradient(50dvw 25dvh at bottom, #2079e0, transparent);
+  background-color: #1b67be;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 110%;
+  margin: 0 -115px;
+  height: 31dvh;
+}
+
+// for labels
+.custom-label {
+  color: #e1e9f2;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.link-label {
+  margin-top: 7px;
+  @include typography(var(--link-text), 600);
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+// for text inputs or text fields
+.error {
+  display: flex;
+  flex-direction: column;
+  background: #cb0000;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+  span {
+    font-size: 13px;
+    padding: 0 3px;
+  }
+}
+
+.textbox__input {
+  border: 3px solid #4990e2 !important;
+  border-radius: 8px;
+  background: white;
+  width: 100%;
+
+  input {
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    padding: 9.5px 14px 9.5px 14px;
+  }
+}
+
+.textbox--error {
+  border: 3px solid #cb0000 !important;
+  border-radius: 8px;
+  background: white;
+  width: 100%;
+
+  input {
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    padding: 9.5px 14px 9.5px 1px;
+  }
+}
+
+.text-yellow {
+  color: var(--link-text);
+}
+
+// For shimmer effect
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+.shimmer {
+  animation: shimmer 1.8s linear infinite;
+  background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 25%, transparent 50%);
+  background-size: 200% 100%;
+}
+
+@media only screen and (max-width: 420px) {
+  .inner {
+    height: 180px;
+  }
+}

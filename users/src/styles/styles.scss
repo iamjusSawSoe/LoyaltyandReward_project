@@ -1,0 +1,29 @@
+// Base
+@import "./partials/base/mixin";
+@import "./partials/base/reset";
+@import "./partials/base/variable";
+@import "./partials/base/common";
+
+// Components
+@import "./partials/components/button";
+@import "./partials/components/textbox";
+@import "./partials/components/otp_box";
+@import "./partials/components/phone_number_box";
+@import "./partials/components/history";
+@import "./partials/components/reward_items";
+@import "./partials/components/header";
+@import "./partials/components/header_text";
+@import "./partials/components/loading";
+@import "./partials/components/points";
+@import "./partials/components/custom_modal";
+@import "./partials/components/error_modal";
+
+// Pages
+@import "./partials/pages/collectpoint";
+@import "./partials/pages/activate_otp";
+@import "./partials/pages/create_acc_success";
+@import "./partials/pages/my_points";
+@import "./partials/pages/enter_pin";
+@import "./partials/pages/reset_pin";
+@import "./partials/pages/claimed_points";
+@import "./partials/pages/forgot_pin";

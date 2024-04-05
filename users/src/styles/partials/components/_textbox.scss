@@ -1,0 +1,24 @@
+.textbox {
+  @include flexdirection(column);
+  color: var(--white-color);
+}
+
+.textbox__label {
+  display: inline-flex;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.flex-icon {
+  @include flexbox(space-between, center);
+
+  .icon {
+    color: var(--white-color);
+  }
+}
+
+.scanner-img {
+  width: 25px;
+  padding-right: 5px;
+}

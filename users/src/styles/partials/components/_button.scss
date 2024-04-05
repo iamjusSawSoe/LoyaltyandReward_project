@@ -1,0 +1,64 @@
+.btn-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  @include dimension(min(90%, 400px), auto);
+  @include margin-y(20px, 10px);
+  padding: 17px 0px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 38px;
+  @include typography(var(--btn-text), 700);
+
+  border-left: 3.5px solid var(--btn-border);
+  border-right: 3.5px solid var(--btn-border);
+  border-top: 4.5px solid var(--btn-border);
+}
+
+.btn:disabled {
+  opacity: 0.7;
+}
+
+.btn--default {
+  background: linear-gradient(to bottom, #fbf574 0%, #f2be45 100%);
+  box-shadow: 0 5px 0 #bc9e07;
+}
+
+.btn--default:hover {
+  background: #f7de61;
+}
+
+.btn--default:disabled {
+  color: #a14812;
+  background: linear-gradient(to bottom, #f0c90a 0%, #f0c90a 100%);
+  box-shadow: 0 5px 0 #bc9e07;
+}
+
+.btn--cancel {
+  background: white;
+  box-shadow: 0 5px 0 #989898;
+  border-left: 3.5px solid #bfbfbf;
+  border-right: 3.5px solid #bfbfbf;
+  border-top: 4.5px solid #bfbfbf;
+}
+
+.btn--fill {
+  padding: 0px;
+  width: 125px !important;
+  @include dimension(125px, 25px);
+  @include margin-y(20px, 10px);
+  background: transparent;
+  box-shadow: 0 2px 0 #bc9e07;
+  @include typography(var(--link-text), 700);
+  border-left: 2px solid var(--btn-border);
+  border-right: 2px solid var(--btn-border);
+  border-top: 2px solid var(--btn-border);
+}
+
+.btn--footer .btn {
+  margin-top: 10.5rem;
+}

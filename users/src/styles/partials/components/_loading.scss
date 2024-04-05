@@ -1,0 +1,42 @@
+.loading {
+  .inner {
+    background: radial-gradient(37dvw 48dvh at bottom, #2079e0, transparent),
+      linear-gradient(180deg, #124074, #1d6dca 85%);
+    height: 64dvh;
+    margin: 0px -240px;
+  }
+
+  .container__content {
+    width: 100%;
+  }
+}
+
+.loading-header {
+  .header__logo {
+    width: clamp(240px, 5dvw + 20rem, 320px);
+    height: 250px;
+    top: -25%;
+    transform: translate(-50%, -100%);
+  }
+}
+
+.progress {
+  @include margin-x(7rem, 7rem);
+
+  .progress__label {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress__bar {
+    margin-top: 1rem;
+    @include mx-auto;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .progress {
+    @include margin-x(2rem, 2rem);
+  }
+}

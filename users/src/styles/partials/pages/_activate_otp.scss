@@ -1,0 +1,54 @@
+.otp {
+  margin-bottom: 20px;
+  padding: 0 6px;
+  color: var(--white-color);
+
+  .otp__header {
+    color: var(--white-color);
+    display: inline-flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #e1e9f2;
+    font-size: 15px;
+    text-align: left;
+    text-wrap: pretty;
+  }
+}
+
+.otp-timer {
+  text-align: left;
+  color: #e1e9f2;
+  padding: 10px 0px 0 5px;
+  line-height: 20px;
+  font-size: 15px;
+
+  .otp-timer__countdown {
+    font-weight: 700;
+    color: white;
+  }
+}
+
+.otp-container .container {
+  margin-top: 0;
+}
+
+.resend-code {
+  margin-bottom: 15px;
+}
+
+.otp-container {
+  .footer {
+    position: absolute;
+  }
+
+  @media only screen and (max-height: 750px) {
+    .footer {
+      margin-top: 20px;
+      position: inherit;
+    }
+  }
+}

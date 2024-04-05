@@ -1,0 +1,50 @@
+.bg-success {
+  .inner {
+    height: 45dvh;
+    background: radial-gradient(32dvw 34dvh at bottom, #2079e0, transparent),
+      linear-gradient(180deg, #124074, #1d6dca 85%);
+  }
+  .header .header__main-logo {
+    top: -185px;
+  }
+}
+
+.yay-success {
+  @include flexbox(center, center);
+  flex-direction: column;
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(15px, 2dvw + 1rem, 30px);
+    color: var(--link-text);
+    text-shadow: 0px 3px #3468a2;
+  }
+  p {
+    color: #e1e9f2;
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  span {
+    color: #e1e9f2;
+    font-size: 15px;
+  }
+}
+
+.yay-success__btn-container {
+  margin-top: clamp(2dvh, 50%, 10dvh);
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+}
+
+.yay-success__btn {
+  width: 100%;
+  margin-top: 5.5rem;
+}
+
+@media only screen and (max-height: 570px) {
+  .bg-success .inner {
+    height: 270px;
+  }
+}

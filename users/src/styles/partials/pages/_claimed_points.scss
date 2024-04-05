@@ -1,0 +1,30 @@
+.claim-points {
+  .inner {
+    height: 58dvh;
+    background: radial-gradient(37dvw 48dvh at bottom, #2079e0, transparent),
+      linear-gradient(180deg, #124074, #1d6dca 85%);
+    background-color: var(--secondary-color);
+  }
+
+  .loading-header .header__logo {
+    top: -62%;
+  }
+
+  .container__content {
+    text-align: center;
+    width: min(92%, 400px);
+    @include flexbox(center, center);
+    flex-direction: column;
+  }
+
+  .points {
+    position: absolute;
+    top: -40%;
+    transform: translate(0, -50%);
+  }
+
+  p {
+    @include margin-y(0.75rem, 0.75rem);
+    width: clamp(200px, 10dvw + 13rem, 300px);
+  }
+}

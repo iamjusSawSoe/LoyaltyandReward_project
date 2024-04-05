@@ -1,0 +1,53 @@
+// Modal
+.modal-popup {
+  text-align: center;
+  position: relative;
+  color: black;
+  overflow-y: scroll;
+
+  .modal-popup__box {
+    padding-top: 140px;
+    border: none;
+    border-radius: 25px;
+
+    .modal-popup__body {
+      position: relative;
+
+      .modal-text {
+        padding: 0 36px;
+      }
+    }
+
+    .modal-popup__para {
+      height: 130px;
+    }
+
+    h3 {
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .modal-img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-bar {
+    @include flexbox(center, center);
+    gap: 0 20px;
+    margin-top: 110px;
+
+    .btn {
+      width: clamp(200px, 80%, 265px);
+    }
+  }
+}

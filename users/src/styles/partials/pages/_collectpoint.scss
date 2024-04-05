@@ -1,0 +1,23 @@
+.checkbox {
+  display: flex;
+
+  .checkbox__label {
+    margin-top: 12px;
+    text-wrap: wrap;
+    font-size: clamp(14px, 1dvw + 0.5rem, 15px);
+  }
+}
+
+.checkbox__item {
+  background-color: var(--white-color);
+}
+
+.inline-link {
+  @include flexbox(center, center);
+}
+
+.error-stage {
+  .footer {
+    position: inherit;
+  }
+}

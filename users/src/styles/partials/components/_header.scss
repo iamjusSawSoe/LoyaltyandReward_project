@@ -1,0 +1,43 @@
+.container {
+  @include flexbox(center, center);
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.container__content {
+  width: min(92%, 400px);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__container {
+  width: 260px;
+  position: relative;
+}
+
+.footer__right-img {
+  position: absolute;
+  width: 30px;
+  bottom: 0;
+}
+
+.footer__left-img {
+  position: absolute;
+  width: 40px;
+  bottom: 10%;
+  right: 0;
+}
+
+@media only screen and (max-height: 41.25em) {
+  .footer {
+    margin-top: 20px;
+    position: inherit;
+  }
+}

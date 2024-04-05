@@ -1,0 +1,65 @@
+.my-points,
+.no-points,
+.view-all {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header {
+    height: 24px;
+
+    .header__logo {
+      top: -750%;
+    }
+  }
+
+  .inner {
+    height: 250px;
+  }
+
+  .my-points__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #0e529d;
+    @include flexbox(center, center);
+    flex-direction: column;
+  }
+
+  .my-points__footer-img {
+    width: 400px;
+    bottom: -5.5%;
+  }
+  .btn {
+    width: min(90%, 300px);
+  }
+}
+
+.points-container {
+  @include flexbox(center, center);
+
+  .points {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-height: 815px) {
+  .my-points {
+    .my-points__footer {
+      position: inherit;
+    }
+  }
+
+  .view-all .history {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .no-points .my-points__footer {
+    position: inherit;
+  }
+}

@@ -1,0 +1,260 @@
+// Base
+@import "./partials/base/mixin";
+@import "./partials/base/reset";
+@import "./partials/base/variable";
+@import "./partials/base/common";
+
+// components
+@import "./partials/components/sidebar";
+
+.content {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  color: black;
+}
+
+.content__wrapper {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  height: 91.4dvh;
+  min-height: 91.4dvh;
+
+  // .ant-layout-sider {
+  //   flex: 0 0 250px !important;
+  //   max-width: 250px !important;
+  //   min-width: 250px !important;
+  //   width: 250px !important;
+  // }
+}
+
+.ant-layout {
+  background-color: var(--primary-color) !important;
+}
+
+.header {
+  background-color: white;
+  position: relative;
+  z-index: 9;
+  box-shadow: 0 4px 8px 0 var(--primary-color), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 10px;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.logo {
+  margin-bottom: 4px;
+}
+
+.animated {
+  transition: transform 0.5s ease-in-out;
+}
+
+.breadcrumb {
+  padding-left: 5px;
+  padding-bottom: 17px;
+}
+
+.ant-table-wrapper {
+  // height: 100%;
+  overflow: hidden;
+
+  .ant-spin-nested-loading {
+    // height: 100%;
+
+    .ant-spin-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // height: 100%;
+
+      .ant-table {
+        // max-height: 90%;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+}
+
+.text-box {
+  @include margin-y(20px, 20px);
+
+  input {
+    margin-top: 8px;
+  }
+}
+
+.search-box {
+  margin-top: 10px;
+  .search-label {
+    margin-bottom: 8px;
+  }
+  .ant-btn {
+    background-color: #1677ff;
+    color: white !important;
+  }
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.float-label {
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  color: grey;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.label-float {
+  top: 2px;
+  font-size: 10px;
+}
+
+.form {
+  .ant-input {
+    padding: 16px 12px 4px 11px;
+  }
+
+  .ant-select-selector {
+    padding-top: 10px !important;
+  }
+
+  .ant-select-single {
+    height: 43px;
+  }
+
+  .ant-select-selection-search-input {
+    height: 30px !important;
+    margin-top: 10px !important;
+  }
+
+  // * for date picker float label
+  .ant-picker-input {
+    input {
+      height: 31px;
+    }
+
+    .ant-picker-suffix {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ant-picker {
+    padding: 10px 11px 0px;
+    width: 200px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+}
+
+.icon-btn {
+  background: #1c68c0;
+  font-size: 20px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  color: white;
+  border-radius: 6px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.cross-btn {
+  font-size: 20px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  color: black;
+  border-radius: 6px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.float-label {
+  .ant-form-item-explain-error {
+    font-size: 12px;
+  }
+}
+
+// * for Detail Modal
+.detail-modal {
+  label {
+    font-weight: 500;
+  }
+}
+
+.modal-form {
+  .text-box {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.modal-header {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100000; /* Ensure the toast appears above other elements */
+}
+
+.ant-breadcrumb-link svg {
+  margin-top: 4px;
+}
+
+.loading {
+  max-height: 100dvh !important;
+}
+
+.text-box .password {
+  margin-top: 8px;
+
+  input {
+    margin-top: 0;
+  }
+}
+
+.card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.gutter-box {
+  padding: 8px 0;
+  background: #00a0e9;
+}

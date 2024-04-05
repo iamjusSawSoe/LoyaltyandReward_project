@@ -1,0 +1,54 @@
+@mixin dimension($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin typography($color: white, $weight: 500) {
+  color: $color;
+  font-weight: $weight;
+}
+
+// For Flex-box
+@mixin flexdirection($direction, $rowGap: 0px, $colGap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $rowGap $colGap;
+}
+
+@mixin flexbox($justifyContent: flex-start, $alignItems: flex-start) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+// For margin
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin margin-x($marginLeft, $marginRight) {
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+}
+
+@mixin margin-y($marginTop, $marginBottom) {
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
+}
+
+// for padding
+@mixin px-auto {
+  padding: auto;
+  padding-right: auto;
+}
+
+@mixin padding-x($paddingLeft, $paddingRight) {
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+}
+
+@mixin padding-y($paddingTop, $paddingBottom) {
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+}

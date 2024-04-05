@@ -1,0 +1,29 @@
+.enter-pin {
+  display: flex;
+}
+
+.enter-pin-container .footer {
+  position: absolute;
+}
+
+.enter-pin-btn {
+  margin-top: 4rem;
+}
+
+.enter-pin-wrapper .footer {
+  position: absolute;
+}
+
+@media only screen and (max-height: 597px) {
+  .enter-pin-wrapper .footer {
+    margin-top: 20px;
+    position: inherit;
+  }
+}
+
+@media only screen and (max-height: 623px) {
+  .enter-pin-container .footer {
+    margin-top: 20px;
+    position: inherit;
+  }
+}

@@ -1,0 +1,22 @@
+.red-number {
+  color: #a14812;
+  padding-right: 4px;
+  font-weight: 700;
+  padding-left: 14px;
+  padding-top: 1px;
+  font-family: "Segoe UI";
+}
+
+.phonebox {
+  @include flexdirection(column);
+  color: var(--white-color);
+
+  .textbox__input {
+    input {
+      font-family: "Segoe UI";
+      border-radius: 5px;
+      padding: 9.5px 14px 9.5px 1px;
+      font-weight: 700;
+    }
+  }
+}

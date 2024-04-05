@@ -1,0 +1,31 @@
+.otp-stack {
+  @include flexbox(start, center);
+  gap: 0px 10px;
+
+  input {
+    height: 2.25rem;
+    padding: 10px 20px 10px 21px;
+  }
+}
+
+@media only screen and (max-width: 25.625em) {
+  .otp-stack {
+    gap: 0px 4px;
+
+    input {
+      padding: clamp(9.5px, 1dvw, 14px) clamp(14px, 1dvw, 16px) clamp(9.5px, 1dvw, 14px)
+        clamp(16px, 1dvw, 18px);
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .otp-stack {
+    gap: 0px 4px;
+
+    input {
+      padding: clamp(9.5px, 1dvw, 14px) clamp(8px, 1dvw + 2px, 12px) clamp(9.5px, 1dvw, 14px)
+        clamp(8px, 0.5dvw + 10px, 23px);
+    }
+  }
+}
